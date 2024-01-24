@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="text-3xl font-bold m-10">Chatrooms</h1>
+  {% for chatroom in chatrooms %}
+    <div class="shadow-lg m-10 p-10 bg-blue-700 text-white rounded-lg">
+      <a href="{% url 'chatroom' chatroom.slug %}">{{ chatroom.name }}</a>
+    </div>
+  {% endfor %}
+{% endblock %}

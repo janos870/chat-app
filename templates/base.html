@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>django-chat</title>
+</head>
+<body>
+    <nav class="shadow-lg p-2">
+        <div class="container flex flex-wrap justify-between mx-auto">
+            <a class="flex items-center" href="">
+                <img src="https://cdn-icons-png.flaticon.com/128/724/724715.png" alt="" width="50">
+                <span class="self-center text-xl font-semibold ml-4">Chat App</span>
+            </a>
+            <div class="">
+                <ul class="flex p-4 mt-1 border rounded-lg border-grau-100 bg-blue-50">
+                    <li>
+                        <a class="p-2 rounded bg-blue-700 text-white mr-4" href="">Chatroom</a>
+                    </li>
+                    <li>
+                        <a class="p-2 rounded bg-slate-700 text-white mr-4" href="">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
