@@ -2,7 +2,7 @@
 
 # Chat app
 
-# Used technologies
+### Used technologies
 
 - django
 - tailwindcss
